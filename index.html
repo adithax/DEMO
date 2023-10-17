@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./index.css">
+  <title>IDEA LAB</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+         <nav class="navbar">
+           <img src="./MIET_Logo.png" alt="Company Logo">
+           <div class="menu-toggle" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+           </div>
+           <ul class="nav no-search">
+             <li class="nav-item"><a href="#">Home</a></li>
+             <li class="nav-item"><a href="#">Admin</a></li>
+             <li class="nav-item"><a href="#">Student</a></li>
+             <li class="nav-item"><a href="#">Check Component Availibity</a></li>
+             <li class="nav-item"><a href="#">Contact Us</a></li>
+             <i class="fas fa-search" id="search-icon"></i>
+             <input class="search-input" type="text" placeholder="Search..">
+           </ul>
+         </nav>
+         </div>
+         <section class="headline">
+           <h1>INNOVATION</h1>
+           <p>IS THE KEY TO SUCCESS</p>
+         </section>
+         <section class="latest-projects">
+            <div class="latest-projects-container">
+              <h2>Latest Projects Undertaken By Students of MIET</h2>
+              </div></section>
+         <section class="features">
+           <div class="feature-container">
+             <img src="./Drone.png" alt="Drone">
+             <h2>Drone</h2>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex et neque atque, non reprehenderit eaque ratione, repellat quis blanditiis perferendis aspernatur officiis sapiente dolore quae doloribus rem aut maxime aliquam.
+             </p>
+           </div>
+           <div class="feature-container">
+             <img src="./Robot.png" alt="Robot">
+             <h2>Robot</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus perspiciatis quisquam hic, facere velit quaerat eaque, odit, non laboriosam voluptate nihil harum officia laborum pariatur itaque incidunt. Velit, sequi.</p>
+           </div>
+           <div class="feature-container">
+             <img src="./Car.png" alt="Car">
+             <h2>Car</h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, animi assumenda cum harum provident sunt modi soluta, recusandae ex consequatur nemo et possimus. Earum repellat excepturi cumque at neque unde!</p>
+           </div>
+         </section>
+       </div>
+       <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2023 IDEA LAB</p>
+          <p>Contact: mietidealab.com</p>
+        </div>
+      </footer>  
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuToggle = document.getElementById("mobile-menu");
+        const mobileNav = document.querySelector(".navbar ul");
+      
+        mobileMenuToggle.addEventListener("click", function () {
+          mobileNav.classList.toggle("mobile-nav");
+        });
+      
+        window.addEventListener("resize", function () {
+          if (window.innerWidth > 720) {
+            mobileNav.classList.remove("mobile-nav");
+          }
+        });
+      });</script> 
+</body>
+</html>
